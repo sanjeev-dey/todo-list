@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="f-grid">
+            <div class="boxes-1">
+                <span style="color: white;">Tasks</span>
+                <span style="font-weight:100; color:white;">List</span>
+            </div>
+            <div onclick="showpop()" class="boxes-2">
+                <span style="color: #4b8ce8;"><i class="fa fa-plus-circle "></i> </span>
+                <span class="boxes">Add Item</span>
+            </div>
+        </div>
+        <div class="todo-card-list">
+           <p class="sugg"> No item item in a todo list</p>
+        </div>
+         
+
+        <div class="popup-container">
+            <div class="popup">
+                <div class="inside-popup">
+                    <div>
+                        <p class="popup-head">Add New List</p>
+                    </div>
+                    <div>
+                        <input id="popinput" type="text" placeholder="Add New List">
+                        
+                    </div>
+                    <div>
+                        <button onclick="addtodo()" class="butn">Add</button>
+                        <button  onclick="notodo()" class="butn">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-container-item">
+            <div class="popup">
+                <div class="inside-popup">
+                    <div>
+                        <p class="popup-head">Add New item</p>
+                    </div>
+                    <div>
+                        <input id="item_input" type="text" placeholder="Add New Item">
+                        
+                    </div>
+                    <div>
+                        <button onclick="addItem()" class="butn">Add</button>
+                        <button  onclick="notodo()" class="butn">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <!-- </div>
+    <div class="container">
+        <div class="card">
+            <div class="inside-div">
+            <p style="margin-bottom: 3px;">trip to paris</p>
+            <hr>
+            <p style="font-weight: 400;"><del>completed task</del></p>
+            </div>
+            <label><input type="checkbox">pending task</label>
+            
+        </div>
+        <div class="card">
+            <div class="inside-div">
+                <p style="margin-bottom: 3px;">trip to paris</p>
+                <hr>
+                <p style="font-weight: 400;"><del>completed task</del></p>
+                </div>
+
+                <p style="font-size: 18px;"><input type="checkbox">pending task</p>
+        </div>
+        <div class="card">
+            <div class="inside-div">
+                <p style="margin-bottom: 3px;">trip to paris</p>
+                <hr>
+                <p style="font-weight: 400;"><del>completed task</del></p>
+                </div>
+
+                <label><input type="checkbox">pending task</label>
+            
+        </div> -->
+    
+<script src="./index.js"></script>
+</body>
+</html>
